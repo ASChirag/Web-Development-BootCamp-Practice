@@ -1,0 +1,47 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.red-bg{
+    background-color: rgb(159, 14, 14);
+    width: 950px;
+    height: 550px;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+
+.outer-circle-text{
+    color: white;
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    position: relative;
+    text-align: center;
+    top: 10px;
+}
+
+.dark-blue-bg{
+    width: 100%;
+    position: relative;
+    top: 124px;
+    height: 200px;
+    background-color: rgb(6, 6, 88);
+}
+
+.white-circle{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: white;
+    left: 360px;
+}
+
+.inner-circle-text{
+        font-size: 47px;
+    font-family: 'Times New Roman', Times, serif;
+    position: relative;
+    text-align: center;
+    top: 68px;
+}
