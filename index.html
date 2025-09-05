@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container ul{
+            display: flex;
+        }
+
+        li {
+            display: block;
+            margin-top:10px;
+            flex: 0.1;
+            text-decoration: none;
+            list-style-type: none;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: midnightblue;
+            margin: 30px;
+            text-align: center;
+            width: 70%;
+            height: 50px;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            border: solid black 2px;
+            border-radius: 20px;
+        }
+
+        li:hover{
+            color: white;
+            background-color: black;
+        }
+
+        @media (max-width: 500px){
+            .container ul{
+                display: block;
+            }
+
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Projects</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+</body>
+</html>
