@@ -1,56 +1,99 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<html>
+  <head>
+    <title>Flexbox Pricing Table</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <style>
-        .container ul{
-            display: flex;
-        }
+      body {
+        font-family: "Sono", sans-serif;
+      }
+      .pricing-container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      .pricing-plan{
+        background-color: rgb(192, 192, 192);
+        margin: 10px;
+        flex-basis: 300px;
+        justify-content: center;
+      }
 
-        li {
-            display: block;
-            margin-top:10px;
-            flex: 0.1;
-            text-decoration: none;
-            list-style-type: none;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            color: midnightblue;
-            margin: 30px;
-            text-align: center;
-            width: 70%;
-            height: 50px;
-            justify-content: center;
-            align-items: center;
-            align-content: center;
-            border: solid black 2px;
-            border-radius: 20px;
-        }
+      .plan-title{
+        font-weight: bold;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 18px;
+        margin: 10px;
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+      }
 
-        li:hover{
-            color: white;
-            background-color: black;
-        }
+      .plan-price{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        display: flex;
+        justify-content: center;
+        font-size: 28px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        font-weight: bold;
+      }
 
-        @media (max-width: 500px){
-            .container ul{
-                display: block;
-            }
+      .plan-button{
+        border: solid 2px midnightblue;
+        background-color: black;
+        color: white;
+        padding: 15px;
+        border-radius: 12px;
+        align-self: center;
+        position: relative;
+        left:90px;
+        margin: 20px;
+      }
 
-        }
-
-
+      /* Hint: What can you do with a media query and flexbox? */
+      @media (max-width: 1250px) {
+      }
     </style>
-</head>
-<body>
-    <div class="container">
-        <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Projects</li>
-            <li>Contact</li>
+  </head>
+
+  <body>
+    <div class="pricing-container">
+      <div class="pricing-plan">
+        <div class="plan-title">Basic</div>
+        <div class="plan-price">$9.99/month</div>
+        <ul class="plan-features">
+          <li>✅ 10GB Storage</li>
+          <li>✅ 1 User</li>
+          <li>🚫 Support</li>
         </ul>
+        <button class="plan-button">Sign Up</button>
+      </div>
+      <div class="pricing-plan">
+        <div class="plan-title">Standard</div>
+        <div class="plan-price">$19.99/month</div>
+        <ul class="plan-features">
+          <li>✅ 50GB Storage</li>
+          <li>✅ 5 Users</li>
+          <li>✅ Phone &amp; Email Support</li>
+        </ul>
+        <button class="plan-button">Sign Up</button>
+      </div>
+      <div class="pricing-plan">
+        <div class="plan-title">Premium</div>
+        <div class="plan-price">$49.99/month</div>
+        <ul class="plan-features">
+          <li>✅ 100GB Storage</li>
+          <li>✅ 10 Users</li>
+          <li>✅ 24/7 Support</li>
+        </ul>
+        <button class="plan-button">Sign Up</button>
+      </div>
     </div>
-</body>
+  </body>
 </html>
